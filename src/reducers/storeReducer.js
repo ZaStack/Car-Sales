@@ -9,10 +9,10 @@ const initialState = [
 
 const storeReducer = ( state = initialState, action ) => {
     switch (action.type) {
-        case ADD_FEATURE:
-            return state.filter(feature => feature.id !== action.payload.id);
-        case REMOVE_FEATURE:
-            return [...state, action.payload]
+        // case ADD_FEATURE:
+        //     return state.filter(feature => feature.id !== action.payload.id);
+        // case REMOVE_FEATURE:
+        //     return [...state, action.payload]
         default:
             return state;
     }
